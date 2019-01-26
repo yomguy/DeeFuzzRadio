@@ -83,7 +83,7 @@ Radio.prototype = {
         crossDomain: true,
         success: function(xml) {
           // console.log(result);
-          console.log($(xml).find("title"));
+          // console.log($(xml).find("title"));
           $(xml).find("title").each(function(index)   {
             var title = $(this).text();
             // console.log(title)
