@@ -14,6 +14,7 @@ elms.forEach(function(elm) {
   window[elm] = document.getElementById(elm);
 });
 
+
 /**
  * Radio class containing the state of our stations.
  * Includes all methods for playing, stopping, etc.
@@ -110,6 +111,7 @@ Radio.prototype = {
     // Stop the sound.
     if (sound) {
       sound.stop();
+      sound.unload();
     }
   },
 
@@ -136,7 +138,7 @@ var stations = [
   {
     freq: '',
     title: "DeeFuzz Full",
-    src: 'httpfor (var i=0; i<stations.length; i++) {://deefuzz.parisson.com:8000/deefuzz_full.mp3',
+    src: 'http://deefuzz.parisson.com:8000/deefuzz_full.mp3',
     howl: null,
     current: 'http://deefuzz.parisson.com:8000/deefuzz_full.mp3.xspf',
   },
