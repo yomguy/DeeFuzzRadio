@@ -136,6 +136,7 @@ body {
 .subtitle {
   display: inline-block;
   vertical-align: middle;
+  font-style: italic;
 }
 
 .live {
