@@ -144,17 +144,17 @@ var stations = [
   },
   {
     freq: '',
-    title: "DeeFuzz Techno",
-    src: 'http://deefuzz.parisson.com:8000/deefuzz_techno.mp3',
-    howl: null,
-    current: 'http://deefuzz.parisson.com:8000/deefuzz_techno.mp3.xspf',
-  },
-  {
-    freq: '',
     title: "DeeFuzz House",
     src: 'http://deefuzz.parisson.com:8000/deefuzz_house.mp3',
     howl: null,
     current: 'http://deefuzz.parisson.com:8000/deefuzz_house.mp3.xspf',
+  },
+  {
+    freq: '',
+    title: "DeeFuzz Techno",
+    src: 'http://deefuzz.parisson.com:8000/deefuzz_techno.mp3',
+    howl: null,
+    current: 'http://deefuzz.parisson.com:8000/deefuzz_techno.mp3.xspf',
   },
   {
     freq: '',
