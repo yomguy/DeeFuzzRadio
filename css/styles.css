@@ -58,6 +58,10 @@ body {
   .footer{
     font-size: 1rem;
   }
+  .live{
+    font-size: 1rem;
+  }
+  
 }
 
 @media all and (max-width: 959px) and (min-width: 600px) {
@@ -65,11 +69,15 @@ body {
       font-size: 3vw;
   }
   .current{
-      font-size: 3vw;
+      font-size: 2.5vw;
   }
   .footer{
     font-size: 2vw;
   }
+  .live{
+    font-size: 2vw;
+  }
+  
 }
   
   @media all and (max-width: 599px) and (min-width: 50px) {
@@ -77,19 +85,20 @@ body {
       font-size: 4vw;
     }
   .current{
-      font-size: 4vw;
+      font-size: 3.5vw;
   }
   .footer{
     font-size: 3vw;
   }
+  .live{
+    font-size: 3vw;
+  }
+  
 }
 
 
 /* Stations */
-.padding {
-  width: 100%;
-  /* height: 12.5%; */
-}
+
 .station {
   position: relative;
   width: 100%;
@@ -118,37 +127,40 @@ body {
   
 .title {
   line-height: 4vw;
-  font-weight: 300;
+  font-weight: bold;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
   padding-bottom: 0.2vw;
 }
+
 .subtitle {
   display: inline-block;
   vertical-align: middle;
 }
+
 .live {
-  width: 3vw;
-  height: 2vw;
+  /* height: 2vw; */
   background-color: #cc1919;
   border-radius: 3px;
   font-weight: bold;
   color: #fff;
-  font-size: 1vw;
-  line-height: 2vw;
+  line-height: 2.5vw;
   display: inline-block;
   text-align: center;
   opacity: 0;
   text-shadow: none;
+  padding: 0.5vw;
 }
 
 .current {
   color: #fff;
   display: inline-block;
   text-align: left;
+  font-weight: normal;
 }
 
 /* Playing Animation */
+
 .playing {
   position: absolute;
   right: 5%;
@@ -162,6 +174,7 @@ body {
   transition: all 0.2s ease;
   display: none;
 }
+
 .playing > div {
   background-color: #fff;
   height: 100%;
