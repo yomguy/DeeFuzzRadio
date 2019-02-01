@@ -75,25 +75,11 @@ Radio.prototype = {
     // Keep track of the index we are currently playing.
     self.index = index;
 
-    var current;
-    $.ajax({type: "GET",
-        url: data.current,
-        dataType: "xml",
-        cache: false,
-        async: true,
-        crossDomain: true,
-        success: function(xml) {
-          // console.log(result);
-          // console.log($(xml).find("title"));
-          $(xml).find("title").each(function(index)   {
-            var title = $(this).text();
-            // console.log(title)
-            // console.log(window['current' + self.index])
-            window['current' + self.index].innerHTML = title;
-          })
-        }
-    });
-
+    self.updateMetadata(data);
+    self.updateMetadataLoop = setInterval(function () {
+      self.updateMetadata(data);
+    }, 10000);
+    
   },
 
   /**
@@ -112,6 +98,7 @@ Radio.prototype = {
     if (sound) {
       sound.stop();
       sound.unload();
+      clearInterval(self.updateMetadataLoop);
     }
   },
 
@@ -131,7 +118,31 @@ Radio.prototype = {
 
     // Show/hide the "playing" animation.
     window['playing' + index].style.display = state ? 'block' : 'none';
+
+    // Show/hide the metadata.
+    window['current' + index].style.display = state ? 'inline-block' : 'none';
+  },
+
+  updateMetadata: function(data) {
+    var self = this;
+
+    // Get and set metadata asynchronously from IceCast XSPF XML data
+    $.ajax({type: "GET",
+      url: data.current,
+      dataType: "xml",
+      cache: false,
+      async: true,
+      crossDomain: true,
+      success: function(xml) {
+        $(xml).find("title").each(function(index)   {
+          var title = $(this).text();
+          var date = new Date();
+          window['current' + self.index].innerHTML = title + date.getTime();
+        })
+      }
+    });
   }
+
 };
 
 var stations = [
