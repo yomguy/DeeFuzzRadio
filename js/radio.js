@@ -52,15 +52,15 @@ Radio.prototype = {
     var sound;
 
     index = typeof index === 'number' ? index : self.index;
-    var data = self.stations[index];
+    self.data = self.stations[index];
 
     // If we already loaded this track, use the current one.
     // Otherwise, setup and load a new Howl.
-    if (data.howl) {
-      sound = data.howl;
+    if (self.data.howl) {
+      sound = self.data.howl;
     } else {
-      sound = data.howl = new Howl({
-        src: data.src,
+      sound = self.data.howl = new Howl({
+        src: self.data.src,
         html5: true, // A live stream can only be played through HTML5 Audio.
         format: ['mp3', 'aac']
       });
@@ -75,9 +75,10 @@ Radio.prototype = {
     // Keep track of the index we are currently playing.
     self.index = index;
 
-    self.updateMetadata(data);
-    self.updateMetadataLoop = setInterval(function () {
-      self.updateMetadata(data);
+    // Update channel metadata every 10s
+    self.updateMetadata();
+    self.updateMetasLoop = setInterval(function () {
+      self.updateMetadata();
     }, 10000);
     
   },
@@ -123,12 +124,12 @@ Radio.prototype = {
     window['current' + index].style.display = state ? 'inline-block' : 'none';
   },
 
-  updateMetadata: function(data) {
+  updateMetadata: function() {
     var self = this;
 
     // Get and set metadata asynchronously from IceCast XSPF XML data
     $.ajax({type: "GET",
-      url: data.current,
+      url: self.data.current,
       dataType: "xml",
       cache: false,
       async: true,
@@ -136,8 +137,9 @@ Radio.prototype = {
       success: function(xml) {
         $(xml).find("title").each(function(index)   {
           var title = $(this).text();
-          var date = new Date();
-          window['current' + self.index].innerHTML = title + date.getTime();
+          // var date = new Date();
+          // title += date.getTime()
+          window['current' + self.index].innerHTML = title;
         })
       }
     });
