@@ -42,6 +42,7 @@ var Radio = function(stations) {
     }.bind(self, i));
   }
 };
+
 Radio.prototype = {
   /**
    * Play a station with a specific index.
@@ -77,7 +78,7 @@ Radio.prototype = {
 
     // Update channel metadata every 10s
     self.updateMetadata();
-    self.updateMetasLoop = setInterval(function () {
+    self.updateMetadataLoop = setInterval(function () {
       self.updateMetadata();
     }, 10000);
     
@@ -95,11 +96,13 @@ Radio.prototype = {
     // Toggle the display.
     self.toggleStationDisplay(self.index, false);
 
+    // Stop metadata update loop
+    clearInterval(self.updateMetadataLoop);
+
     // Stop the sound.
     if (sound) {
       sound.stop();
       sound.unload();
-      clearInterval(self.updateMetadataLoop);
     }
   },
 
