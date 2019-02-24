@@ -81,7 +81,7 @@ Radio.prototype = {
     self.updateMetadataLoop = setInterval(function () {
       self.updateMetadata();
     }, 10000);
-    
+
   },
 
   /**
@@ -154,37 +154,37 @@ var stations = [
   {
     freq: '',
     title: "DeeFuzz Full",
-    src: 'http://deefuzz.parisson.com:8000/deefuzz_full.mp3',
+    src: 'https://stream.parisson.com/icecast/deefuzz_full.mp3',
     howl: null,
-    current: 'http://deefuzz.parisson.com:8000/deefuzz_full.mp3.xspf',
+    current: 'https://stream.parisson.com/icecast/deefuzz_full.mp3.xspf',
   },
   {
     freq: '',
     title: "DeeFuzz House",
-    src: 'http://deefuzz.parisson.com:8000/deefuzz_house.mp3',
+    src: 'https://stream.parisson.com/icecast/deefuzz_house.mp3',
     howl: null,
-    current: 'http://deefuzz.parisson.com:8000/deefuzz_house.mp3.xspf',
+    current: 'https://stream.parisson.com/icecast/deefuzz_house.mp3.xspf',
   },
   {
     freq: '',
     title: "DeeFuzz Techno",
-    src: 'http://deefuzz.parisson.com:8000/deefuzz_techno.mp3',
+    src: 'https://stream.parisson.com/icecast/deefuzz_techno.mp3',
     howl: null,
-    current: 'http://deefuzz.parisson.com:8000/deefuzz_techno.mp3.xspf',
+    current: 'https://stream.parisson.com/icecast/deefuzz_techno.mp3.xspf',
   },
   {
     freq: '',
     title: "DeeFuzz Jungle",
-    src: 'http://deefuzz.parisson.com:8000/deefuzz_jungle.mp3',
+    src: 'https://stream.parisson.com/icecast/deefuzz_jungle.mp3',
     howl: null,
-    current: 'http://deefuzz.parisson.com:8000/deefuzz_jungle.mp3.xspf',
+    current: 'https://stream.parisson.com/icecast/deefuzz_jungle.mp3.xspf',
   },
   {
     freq: '',
     title: "DeeFuzz Down Tempo",
-    src: 'http://deefuzz.parisson.com:8000/deefuzz_down_tempo.mp3',
+    src: 'https://stream.parisson.com/icecast/deefuzz_down_tempo.mp3',
     howl: null,
-    current: 'http://deefuzz.parisson.com:8000/deefuzz_down_tempo.mp3.xspf',
+    current: 'https://stream.parisson.com/icecast/deefuzz_down_tempo.mp3.xspf',
   },
 ]
 
