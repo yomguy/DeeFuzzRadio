@@ -4,6 +4,9 @@
  *
  *  (c) 2013-2018, James Simpson of GoldFire Studios
  *  goldfirestudios.com
+ * 
+ *  (c) 2019, Guillaume Pellerin
+ *  adapted for live streaming from icecast sources comnig from deefuzzer
  *
  *  MIT License
  */
@@ -51,6 +54,7 @@ Radio.prototype = {
   play: function(index) {
     var self = this;
     var sound;
+    var metadata_period = 10000;
 
     index = typeof index === 'number' ? index : self.index;
     self.data = self.stations[index];
@@ -80,7 +84,7 @@ Radio.prototype = {
     self.updateMetadata();
     self.updateMetadataLoop = setInterval(function () {
       self.updateMetadata();
-    }, 10000);
+    }, metadata_period);
     
   },
 
