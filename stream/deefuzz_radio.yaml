@@ -1,6 +1,6 @@
 deefuzzer: 
-  log: ~/log/deefuzzzer/station.log
-  m3u: ~/log/deefuzzzer/station.m3u
+  log: /var/log/deefuzzer/station.log
+  m3u: /var/log/deefuzzer/station.m3u
   station: 
     - 
       control: 
