@@ -1,0 +1,262 @@
+deefuzzer: 
+  log: ~/log/deefuzzzer/station.log
+  m3u: ~/log/deefuzzzer/station.m3u
+  station: 
+    - 
+      control: 
+        mode: 0
+        port: 16001
+      feeds: 
+        dir: /path/to/rss/
+        enclosure: 1
+        json: 0
+        media_url: "http://localhost/media/"
+        mode: 0
+        playlist: 1
+        rss: 1
+      infos: 
+        description: "DeeFuzz - Techno - 100% mix"
+        genre: "Techno"
+        name: "DeeFuzz - Techno"
+        short_name: "deefuzz_techno"
+        url: "https://deefuzz.parisson.com"
+      jingles: 
+        dir: /path/to/jingles
+        mode: 0
+        shuffle: 1
+      media: 
+        bitrate: 96
+        format: mp3
+        ogg_quality: 4
+        samplerate: 44100
+        shuffle: 0
+        source: /home/momo/Music/Lossy/MP3/DeeFuzz/techno/
+        voices: 2
+      record: 
+        dir: /path/to/archives
+        mode: 0
+      relay: 
+        author: Unknown
+        mode: 0
+        url: "http://127.0.0.1:8000/telecaster_live.mp3"
+      server: 
+        appendtype: 1
+        host: "jimmy.parisson.com"
+        mountpoint: deefuzz_techno
+        port: 8000
+        public: 0
+        sourcepassword: hackme
+        type: icecast
+      twitter: 
+        key: "your access token key"
+        mode: 0
+        secret: "your access token secret key"
+        tags: "parisson deefuzzer"
+    - 
+      control: 
+        mode: 0
+        port: 16001
+      feeds: 
+        dir: /path/to/rss/
+        enclosure: 1
+        json: 0
+        media_url: "http://localhost/media/"
+        mode: 0
+        playlist: 1
+        rss: 1
+      infos: 
+        description: "DeeFuzz - House - 100% mix"
+        genre: "House"
+        name: "DeeFuzz - House"
+        short_name: "deefuzz_house"
+        url: "https://deefuzz.parisson.com"
+      jingles: 
+        dir: /path/to/jingles
+        mode: 0
+        shuffle: 1
+      media: 
+        bitrate: 96
+        format: mp3
+        ogg_quality: 4
+        samplerate: 44100
+        shuffle: 0
+        source: /home/momo/Music/Lossy/MP3/DeeFuzz/house/
+        voices: 2
+      record: 
+        dir: /path/to/archives
+        mode: 0
+      relay: 
+        author: Unknown
+        mode: 0
+        url: "http://127.0.0.1:8000/telecaster_live.mp3"
+      server: 
+        appendtype: 1
+        host: "jimmy.parisson.com"
+        mountpoint: deefuzz_house
+        port: 8000
+        public: 0
+        sourcepassword: hackme
+        type: icecast
+      twitter: 
+        key: "your access token key"
+        mode: 0
+        secret: "your access token secret key"
+        tags: "parisson deefuzzer"
+    - 
+      control: 
+        mode: 0
+        port: 16001
+      feeds: 
+        dir: /path/to/rss/
+        enclosure: 1
+        json: 0
+        media_url: "http://localhost/media/"
+        mode: 0
+        playlist: 1
+        rss: 1
+      infos: 
+        description: "DeeFuzz - Down Tempo - 100% mix"
+        genre: "Down Tempo"
+        name: "DeeFuzz - Down Tempo"
+        short_name: "deefuzz_down_tempo"
+        url: "https://deefuzz.parisson.com"
+      jingles: 
+        dir: /path/to/jingles
+        mode: 0
+        shuffle: 1
+      media: 
+        bitrate: 96
+        format: mp3
+        ogg_quality: 4
+        samplerate: 44100
+        shuffle: 0
+        source: /home/momo/Music/Lossy/MP3/DeeFuzz/down_tempo/
+        voices: 2
+      record: 
+        dir: /path/to/archives
+        mode: 0
+      relay: 
+        author: Unknown
+        mode: 0
+        url: "http://127.0.0.1:8000/telecaster_live.mp3"
+      server: 
+        appendtype: 1
+        host: "jimmy.parisson.com"
+        mountpoint: deefuzz_down_tempo
+        port: 8000
+        public: 0
+        sourcepassword: hackme
+        type: icecast
+      twitter: 
+        key: "your access token key"
+        mode: 0
+        secret: "your access token secret key"
+        tags: "parisson deefuzzer"
+    - 
+      control: 
+        mode: 0
+        port: 16001
+      feeds: 
+        dir: /path/to/rss/
+        enclosure: 1
+        json: 0
+        media_url: "http://localhost/media/"
+        mode: 0
+        playlist: 1
+        rss: 1
+      infos: 
+        description: "DeeFuzz - Jungle - 100% mix"
+        genre: "Jungle"
+        name: "DeeFuzz - Jungle"
+        short_name: "deefuzz_jungle"
+        url: "https://deefuzz.parisson.com"
+      jingles: 
+        dir: /path/to/jingles
+        mode: 0
+        shuffle: 1
+      media: 
+        bitrate: 96
+        format: mp3
+        ogg_quality: 4
+        samplerate: 44100
+        shuffle: 0
+        source: /home/momo/Music/Lossy/MP3/DeeFuzz/jungle/
+        voices: 2
+      record: 
+        dir: /path/to/archives
+        mode: 0
+      relay: 
+        author: Unknown
+        mode: 0
+        url: "http://127.0.0.1:8000/telecaster_live.mp3"
+      server: 
+        appendtype: 1
+        host: "jimmy.parisson.com"
+        mountpoint: deefuzz_jungle
+        port: 8000
+        public: 0
+        sourcepassword: hackme
+        type: icecast
+      twitter: 
+        key: "your access token key"
+        mode: 0
+        secret: "your access token secret key"
+        tags: "parisson deefuzzer"
+    - 
+      control: 
+        mode: 0
+        port: 16001
+      feeds: 
+        dir: /path/to/rss/
+        enclosure: 1
+        json: 0
+        media_url: "http://localhost/media/"
+        mode: 0
+        playlist: 1
+        rss: 1
+      infos: 
+        description: "DeeFuzz - Full - 100% mix"
+        genre: "House Techno Jungle DownTempo"
+        name: "DeeFuzz - Full"
+        short_name: "deefuzz_full"
+        url: "https://deefuzz.parisson.com"
+      jingles: 
+        dir: /path/to/jingles
+        mode: 0
+        shuffle: 1
+      media: 
+        bitrate: 96
+        format: mp3
+        ogg_quality: 4
+        samplerate: 44100
+        shuffle: 0
+        source: /home/momo/Music/Lossy/MP3/DeeFuzz/
+        voices: 2
+      record: 
+        dir: /path/to/archives
+        mode: 0
+      relay: 
+        author: Unknown
+        mode: 0
+        url: "http://127.0.0.1:8000/telecaster_live.mp3"
+      server: 
+        appendtype: 1
+        host: "jimmy.parisson.com"
+        mountpoint: deefuzz_full
+        port: 8000
+        public: 0
+        sourcepassword: hackme
+        type: icecast
+      twitter: 
+        key: "your access token key"
+        mode: 0
+        secret: "your access token secret key"
+        tags: "parisson deefuzzer"
+  stationdefaults: 
+    control: 
+      mode: 0
+      port: 16001
+    jingles: 
+      dir: /path/to/jingles
+      mode: 0
+      shuffle: 1
