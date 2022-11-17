@@ -2,7 +2,7 @@ deefuzzer:
   log: /var/log/deefuzzer/station.log
   m3u: /var/log/deefuzzer/station.m3u
   station: 
-    - 
+    -   
       control: 
         mode: 0
         port: 16001
